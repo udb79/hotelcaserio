@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+</head>
+<body>
+    <h1>Haga su reserva</h1>
+    <form action="procesareserva.php">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <p>
+                <label for="nombre">
+                    Nombre: 
+                    <input type="text" name="nombre" id="nombre" maxlength="100" autofocus>
+                </label>
+            </p>
+            <p>
+                <label for="apellidos">
+                    Apellidos: 
+                    <input type="text" name="apellidos" id="apellidos" maxlength="100">
+                </label>
+            </p>
+            <p>
+                <label for="dni">
+                    DNI: 
+                    <input type="text" name="dni" id="dni" maxlength="10" placeholder="DNI con letra" required>
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de su estancia</legend>
+                <p>
+                    <label for="individual">
+                        Individual
+                        <input type="radio" id="individual" name="Habitación" checked>
+                    </label>
+                    <label for="doble">
+                        Doble
+                        <input type="radio" id="doble" name="Habitación">
+                    </label>
+                    <label for="triple">
+                        Tripe
+                        <input type="radio" id="triple" name="Habitación">
+                    </label>
+                </p>
+                <p>
+                    <label for="personas">Número de personas:
+                        <select name="personas" id="personas">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label for="mascotas">
+                        Llevo mascotas
+                        <input type="checkbox" id="mascotas" name="mascotas">
+                    </label>
+                </p>
+                <p>
+                    <label for="fecha-llegada">
+                        Fecha de llegada
+                        <input type="date" name="fecha-llegada" id="fecha-llegada">
+                    </label>
+                </p>
+                <p>
+                    <label for="hora-llegada">
+                        Fecha de llegada
+                        <input type="time" name="hora-llegada" id="hora-llegada">
+                    </label>
+                </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reiniciar formulario">
+        </p>
+        <p>
+            <a href="index.html">Volver</a>
+        </p>
+    </form>
+</body>
+</html>
